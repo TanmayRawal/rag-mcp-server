@@ -1,5 +1,5 @@
 import os
-os.environ["GROQ_API_KEY"] = "GROQ_API_KEY"
+os.environ["GROQ_API_KEY"] = "GROQ_API"
 
 import sys
 sys.path.insert(0, r"C:\Users\Tanmay\Research_assistant")

@@ -3,3 +3,5 @@ sentence-transformers
 faiss-cpu
 groq
 mcp
+python-dotenv
+streamlit

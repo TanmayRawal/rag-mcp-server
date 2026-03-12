@@ -1,10 +1,25 @@
 # RAG-Powered MCP Server for Document Q&A
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![VectorDB](https://img.shields.io/badge/VectorDB-FAISS-green)
+![LLM](https://img.shields.io/badge/LLM-Groq_LLaMA-orange)
+![UI](https://img.shields.io/badge/UI-Streamlit-red)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 A production-ready **Retrieval-Augmented Generation (RAG)** pipeline exposed as a **Model Context Protocol (MCP)** server — enabling Claude Desktop to answer questions directly from your private document collection.
 
 Built with FAISS vector search, Sentence Transformers, and Groq LLM.
 
 ![Demo](./assets/demo.png)
+## Features
+
+- Retrieval-Augmented Generation (RAG) pipeline
+- FAISS vector similarity search
+- Sentence Transformer embeddings
+- Groq LLaMA inference for fast responses
+- Streamlit chat interface
+- Claude Desktop MCP integration
+- Source-grounded answers (no hallucination)
+- Adjustable retrieval depth
 
 ---
 
@@ -52,6 +67,22 @@ Answer returned to Claude Desktop
 | MCP server | FastMCP (Python SDK) | Expose RAG as Claude Desktop tool |
 
 ---
+## Streamlit Web Interface
+
+The project also includes an interactive **Streamlit chat interface** that allows users to query their documents directly from a browser.
+
+Features:
+
+• Chat-style interface  
+• Source-grounded answers  
+• Adjustable retrieval depth  
+• Retrieved document chunks inspection  
+
+### Screenshot
+
+![Streamlit Interface](assets/streamlit_demo.png)
+
+---
 
 ## Project Structure
 
@@ -77,6 +108,7 @@ rag-mcp-server/
 │
 ├── requirements.txt
 └── README.md
+├── streamlit_app.py       ← Streamlit web interface
 ```
 
 ---
@@ -153,7 +185,7 @@ python rag.py
     }
   }
 }
-```
+
 
 ### 2. Restart Claude Desktop
 
@@ -180,6 +212,17 @@ Claude automatically calls your `query_knowledge_base` tool and answers from you
 No fine-tuning. No training. Just smart search + generation.
 
 ---
+## Example Questions
+
+Try asking questions like:
+
+- What does the Transformer paper say about multi-head attention?
+- What are the pre-training objectives used in BERT?
+- How does Retrieval Augmented Generation work?
+- What datasets were used to evaluate the RAG model?
+
+---
+
 
 ## Requirements
 
