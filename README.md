@@ -4,7 +4,7 @@ A production-ready **Retrieval-Augmented Generation (RAG)** pipeline exposed as 
 
 Built with FAISS vector search, Sentence Transformers, and Groq LLM.
 
-![Demo](assets/demo.png)
+![Demo](./assets/demo.png)
 
 ---
 
@@ -17,6 +17,7 @@ Ask Claude *"What does the Transformer paper say about multi-head attention?"* a
 ---
 
 ## Architecture
+![Architecture](assets/architecture.png)
 
 ```
 PDFs
@@ -136,6 +137,7 @@ python rag.py
 ---
 
 ## Connecting to Claude Desktop
+![MCP Running](assets/mcp_running.png)
 
 ### 1. Edit the MCP config
 
