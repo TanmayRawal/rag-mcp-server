@@ -1,0 +1,5 @@
+pymupdf
+sentence-transformers
+faiss-cpu
+groq
+mcp
