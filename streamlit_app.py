@@ -1,6 +1,9 @@
 import streamlit as st
-from rag import query_rag_with_sources
 import os
+
+os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
+from rag import query_rag_with_sources
+
 
 st.set_page_config(
     page_title="RAG Knowledge Assistant",
